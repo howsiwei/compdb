@@ -44,13 +44,13 @@ Getting started
 Installation
 ~~~~~~~~~~~~
 
+Install with pipx_::
+
+  pipx install git+https://github.com/howsiwei/compdb.git
+
 Install with pip_::
 
-  pip install compdb
-
-From Github, as user::
-
-  pip install --user git+https://github.com/Sarcasm/compdb.git#egg=compdb
+  pip install --user git+https://github.com/howsiwei/compdb.git#egg=compdb
 
 
 Generate a compilation database with header files
@@ -113,6 +113,7 @@ Acknowledgments
 .. _julio.meroh.net: https://julio.meroh.net/
 .. _JSON Compilation Database: http://clang.llvm.org/docs/JSONCompilationDatabase.html
 .. _libclang: http://clang.llvm.org/doxygen/group__CINDEX.html
+.. _pipx: https://pipx.pypa.io/
 .. _pip: https://pip.pypa.io/
 .. _repo: https://gerrit.googlesource.com/git-repo/
 .. _rtags: https://github.com/Andersbakken/rtags
