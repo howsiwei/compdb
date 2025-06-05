@@ -34,7 +34,7 @@ class Config(object):
 
 
 class Command(object):
-    def execute(self, config, args):
+    def execute(self, config, argv):
         raise NotImplementedError
 
 
