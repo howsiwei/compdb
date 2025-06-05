@@ -111,6 +111,8 @@ class Preprocessor(object):
                         u_filename = b_filename.decode('utf-8')
                     except UnicodeDecodeError:
                         u_filename = b_filename.decode('latin-1')
+                    if u_quote == "<" and u_filename[0].islower():
+                        continue
                     yield (u_quote, u_filename)
         except FileNotFoundError as exc:
             # tolerate, but log, missing files [GH-4]
